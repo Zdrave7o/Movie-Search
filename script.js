@@ -1,4 +1,4 @@
-const apiKey = `6eb09120`;
+const apiKey = ``;
 
 async function searchMovies(movieName) {
     try {
