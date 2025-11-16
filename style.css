@@ -22,12 +22,18 @@
 
 .movie-page-right{
     border:2px solid red;
-    height:400px;
+    height:auto;
 }
 
 .wrapper{
     height:100vh;
-    background-color: hsla(0, 0%, 0%, 0.166);
+    background-color: hsla(0, 0%, 0%, 0.431);
+}
+
+.main-text-container{
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 40%;
 }
 
 
