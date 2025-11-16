@@ -1,3 +1,33 @@
 .navigation{
     color:white;
 }
+
+.main-page{
+    min-height: 100vh;
+    background-image: url("https://wallpapercave.com/wp/wp12389567.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.movie-page{
+    min-height: 100vh;
+    background-color: hsl(0, 0%, 14%);
+}
+
+.movie-page-left{
+    border:2px solid red;
+    height:auto;
+}
+
+.movie-page-right{
+    border:2px solid red;
+    height:400px;
+}
+
+.wrapper{
+    height:100vh;
+    background-color: hsla(0, 0%, 0%, 0.166);
+}
+
+
