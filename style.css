@@ -36,4 +36,15 @@
     top: 40%;
 }
 
+.search-results{
+    bottom: -293px;
+    height: 300px;
+    background-color: white;
+    z-index:3;
+}
+
+.search-result{
+    height:50%;
+}
+
 
