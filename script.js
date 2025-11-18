@@ -1,4 +1,4 @@
-const apiKey = `6eb09120`;
+const apiKey = ``;
 const searchBar = document.querySelector(".movie-search-input");
 const searchResults = document.querySelector(".search-results");
 
