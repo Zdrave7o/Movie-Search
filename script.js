@@ -20,7 +20,17 @@ async function searchMovies(movieName) {
     }
 }
 
-searchBar.addEventListener("input", displayMovies)
+searchBar.addEventListener("input", displayMovies);
+document.addEventListener("click", (e) => {
+    if (!searchBar.contains(e.target) && !searchResults.contains(e.target)) {
+        hideResults();
+    }
+});
+
+searchBar.addEventListener("unfocus", ()=>{
+    searchResults.classList.remove("d-block");
+    searchResults.classList.add("d-none");
+})
 
 async function displayMovies() {
     const query = searchBar.value;
@@ -48,4 +58,14 @@ async function displayMovies() {
         console.log('No results or error:', err.message);
         searchResults.innerHTML = "<p class='fw-light text-center'>No Results</p>"
     }
+}
+
+function hideResults() {
+    searchResults.classList.remove("d-block");
+    searchResults.classList.add("d-none");
+}
+
+function showResults() {
+    searchResults.classList.remove("d-none");
+    searchResults.classList.add("d-block");
 }
